@@ -1,0 +1,39 @@
+Password for the [elastic] user successfully reset.
+New value: p6iWCc1RkAYQHhL9MB32
+
+
+Password for the [kibana_system] user successfully reset.
+New value: OAXnXIXDtZjgjBF*qKXM
+
+
+token
+eyJ2ZXIiOiI4LjExLjAiLCJhZHIiOlsiMTkyLjE2OC4zMS4xNjY6OTIwMCJdLCJmZ3IiOiJjNDUzZDU1YmViZjM4ZTI0ZTVmN2FhZWM0ODk5YmJlZWNiZjAwODlkMDJiZWNmZDZiMjM1Y2MwOTVmNzc3MjJjIiwia2V5Ijoid0U2WXI0c0JReGNUMVhJLVY2Unk6cmY3WlhzcXhUWUtwbWs2bjNNTkZUZyJ9
+
+
+POST kbn:/api/fleet/agent_policies?sys_monitoring=true
+{
+  "name": "Agent policy 1",
+  "description": "",
+  "namespace": "default",
+  "monitoring_enabled": [
+    "logs",
+    "metrics"
+  ],
+  "inactivity_timeout": 1209600,
+  "is_protected": false
+}
+
+
+POST kbn:/api/fleet/package_policies
+{
+  "policy_id": "<agent_policy_id>",
+  "package": {},
+  "name": "",
+  "description": "",
+  "namespace": "default",
+  "inputs": {}
+}
+
+
+api KEY
+V1NhZnNJc0JLTGZHT3JBOHA3RUw6SVZhZVU1bklRR0M1Y3NpaFdObzk2UQ==
